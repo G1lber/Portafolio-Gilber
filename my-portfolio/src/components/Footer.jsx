@@ -1,27 +1,18 @@
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
     return (
-      <footer className="bg-gray-800 text-white text-center py-8">
-        <p>&copy; 2025 Gilber. Todos los derechos reservados.</p>
-        <div className="mt-4 space-x-4">
+      <footer className="bg-gray-900 text-white text-center py-8">
+        {/* <div className="mt-4 space-x-4">
           <a
-            href="https://github.com/tu-usuario"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-green-400 transition"
+            href="mailto:martinezfrancogilber@gmail.com"
+            className="text-green-400 hover:underline flex items-center justify-center gap-2"
           >
-            GitHub
+          <MdEmail size={20} />
+          Contáctame
           </a>
-          <a
-            href="https://linkedin.com/in/tu-usuario"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-green-400 transition"
-          >
-            LinkedIn
-          </a>
-          {/* Puedes agregar más redes si quieres */}
-        </div>
+        </div> */}
+        <p>&copy; 2025 Gilber Martinez. Todos los derechos reservados.</p>
       </footer>
     );
   };
