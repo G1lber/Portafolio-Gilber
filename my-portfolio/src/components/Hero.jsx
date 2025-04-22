@@ -47,7 +47,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="flex flex-col md:flex-row justify-center items-center h-[90vh] px-9 gap-4 bg-gray-900">
+    <section className="flex flex-col md:flex-row justify-center items-center h-screen px-9 gap-4 bg-gray-900">
       {/* Columna izquierda: Texto */}
       <div className="flex-1 flex flex-col justify-center items-start gap-4 ml-19">
         <motion.h1
