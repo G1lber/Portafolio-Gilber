@@ -204,26 +204,6 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Call to action */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="text-center mt-16"
-        >
-          <p className="text-gray-400 text-lg mb-6">
-            ¿Te interesa ver más de mi trabajo o colaborar en un proyecto?
-          </p>
-          <motion.a
-            href="#contact"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-2 bg-green-400 text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-green-300 transition duration-300"
-          >
-            Trabajemos juntos
-          </motion.a>
-        </motion.div>
       </div>
     </section>
   );
