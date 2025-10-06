@@ -119,31 +119,7 @@ import { VscVscode } from "react-icons/vsc";
                   </motion.div>
                 ))}
               </div>
-
-              {/* Category progress indicator */}
-              <div className="mt-6 pt-4 border-t border-gray-700">
-                <div className="flex justify-between items-center text-xs text-gray-400 mb-2">
-                  <span>Nivel de competencia</span>
-                  <span>
-                    {category.title === "Frontend" ? "90%" : 
-                     category.title === "Backend" ? "85%" :
-                     category.title === "Herramientas" ? "80%" : "70%"}
-                  </span>
-                </div>
-                <div className="w-full bg-gray-700 rounded-full h-2">
-                  <motion.div
-                    initial={{ width: 0 }}
-                    whileInView={{ 
-                      width: category.title === "Frontend" ? "90%" : 
-                            category.title === "Backend" ? "85%" :
-                            category.title === "Herramientas" ? "80%" : "70%"
-                    }}
-                    transition={{ duration: 1, delay: categoryIndex * 0.2 }}
-                    viewport={{ once: true }}
-                    className="bg-gradient-to-r from-green-400 to-blue-400 h-2 rounded-full"
-                  ></motion.div>
-                </div>
-              </div>
+              
             </motion.div>
           ))}
         </div>
