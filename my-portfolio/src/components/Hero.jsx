@@ -107,16 +107,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 0.6 }}
         >
-          <motion.a
-            href="#contact"
-            className="px-8 py-4 bg-green-400 text-gray-900 rounded-lg font-semibold hover:bg-green-300 transition duration-300 flex items-center gap-2 justify-center"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <MdEmail size={20} />
-            Contrátame
-          </motion.a>
-          
+          {/* Download CV button */} 
           <motion.a
             href="/cv-gilber-martinez.pdf"
             download
