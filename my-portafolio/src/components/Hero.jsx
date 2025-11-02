@@ -109,11 +109,13 @@ const Hero = () => {
         >
           {/* Download CV button */} 
           <motion.a
-            href="/cv-gilber-martinez.pdf"
-            download
+            href="/Cv- Gilber Martinez.pdf" // coloca public/gilber-martinez-cv.pdf en la carpeta public
+            download="Gilber-Martinez-CV.pdf" // nombre sugerido al guardar
             className="px-8 py-4 border-2 border-green-400 text-green-400 rounded-lg font-semibold hover:bg-green-400 hover:text-gray-900 transition duration-300 flex items-center gap-2 justify-center"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            aria-label="Descargar CV de Gilber Martínez"
+            title="Descargar CV"
           >
             <FaDownload size={18} />
             Descargar CV
