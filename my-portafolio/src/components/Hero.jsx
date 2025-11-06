@@ -47,6 +47,12 @@ const Hero = () => {
     return () => clearInterval(typingInterval);
   }, []);
 
+  // Navegar suavemente a la sección About
+  const scrollToAbout = () => {
+    const el = document.getElementById("about");
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <section className="relative flex flex-col md:flex-row justify-center items-center min-h-screen px-6 md:px-12 gap-8 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       {/* Decorative background elements */}
@@ -179,9 +185,20 @@ const Hero = () => {
         transition={{ delay: 2, duration: 0.6 }}
       >
         <motion.div
+          role="button"
+          tabIndex={0}
+          onClick={scrollToAbout}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              scrollToAbout();
+            }
+          }}
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="text-gray-400 hover:text-green-400 cursor-pointer"
+          className="text-gray-400 hover:text-green-400 cursor-pointer focus:outline-none"
+          aria-label="Ir a la sección Sobre"
+          title="Ir a la sección Sobre"
         >
           <FaArrowDown size={20} />
         </motion.div>
