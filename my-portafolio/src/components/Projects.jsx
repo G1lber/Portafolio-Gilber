@@ -67,12 +67,54 @@ const projectsData = [
     github: "https://github.com/G1lber/UpTask-MERN",
     demo: null,
     date: "2024",
-    status: "En desarrollo",
+    status: "Completado",
     features: [
       "CRUD completo",
       "Autenticación JWT",
       "Estado global",
       "Diseño responsivo",
+    ],
+  },
+  {
+    title: "Sistema de Control de Inspecciones Vehiculares",
+    description:
+      "Aplicación web MERN que automatizó el proceso de revisión técnico-mecánica de buses en la terminal, eliminando el registro manual en papel.",
+    technologies: [
+      { icon: <SiMongodb />, name: "MongoDB" },
+      { icon: <SiExpress />, name: "Express" },
+      { icon: <SiReact />, name: "React" },
+      { icon: <SiNodedotjs />, name: "Node.js" },
+    ],
+    github: "https://github.com/G1lber/Proyecto-terminal",
+    demo: "https://proyecto-terminal-two.vercel.app",
+    date: "2025",
+    status: "Completado",
+    features: [
+      "Generación automática de reportes",
+      "Notificaciones en tiempo real a taquilla",
+      "60% menos tiempo en autorizaciones",
+    ],
+  },
+  {
+    title: "Control de Formatos de Pagos",
+    description:
+      "Aplicación MyERN para validar y filtrar formatos de pago usando reconocimiento de caracteres (OCR). El sistema automatiza la verificación de campos en los formatos.",
+    technologies: [
+      { icon: <SiMysql />, name: "MySQL" },
+      { icon: <SiExpress />, name: "Express" },
+      { icon: <SiReact />, name: "React" },
+      { icon: <SiNodedotjs />, name: "Node.js" },
+      { icon: <SiJavascript />, name: "Tesseract.js (OCR)" },
+    ],
+    github: "https://github.com/G1lber/Control-Formatos-Pagos",
+    demo: "https://gfgc.agropecuario.net",
+    date: "2025",
+    status: "Completado",
+    features: [
+      "Filtros automáticos para detectar errores",
+      "Generación de reportes detallados para supervisores",
+      "Interfaz sencilla y amigable para usuarios",
+      "Reducción de errores manuales y mayor trazabilidad",
     ],
   },
 ];
