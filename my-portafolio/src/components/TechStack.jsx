@@ -50,10 +50,10 @@ import { VscVscode } from "react-icons/vsc";
     {
       title: "Aprendiendo",
       technologies: [
-        { icon: <FaLaravel />, name: "Laravel" },
+        // { icon: <FaLaravel />, name: "Laravel" },
         { icon: <FaDocker />, name: "Docker" },
         { icon: <SiTypescript />, name: "TypeScript" },
-        { icon: <FaWordpress />, name: "WordPress" },
+        // { icon: <FaWordpress />, name: "WordPress" },
       ],
     },
     

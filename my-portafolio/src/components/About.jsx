@@ -65,13 +65,13 @@ const About = () => {
             className="space-y-6"
           >
             <h3 className="text-2xl font-semibold text-green-400 mb-4">
-              Desarrollador Full Stack Apasionado
+              Desarrollador 
             </h3>
             
             <p className="text-gray-300 text-lg leading-relaxed">
               Soy <span className="font-semibold text-white">Gilber Martínez</span>, 
-              un desarrollador full stack con experiencia en la creación de aplicaciones 
-              web modernas y escalables. Mi pasión por la tecnología me impulsa a estar 
+              un desarrollador con experiencia en la creación de aplicaciones 
+              web modernas. Mi pasión por la tecnología me impulsa a estar 
               siempre actualizado con las últimas tendencias del desarrollo.
             </p>
 
@@ -99,7 +99,7 @@ const About = () => {
             </div>
           </motion.div>
 
-          {/* Skills grid */}
+          Skills grid
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -124,7 +124,7 @@ const About = () => {
         </div>
 
         {/* Achievements */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
@@ -141,7 +141,7 @@ const About = () => {
               </div>
             </div>
           ))}
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
