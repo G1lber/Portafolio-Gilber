@@ -99,7 +99,7 @@ const About = () => {
             </div>
           </motion.div>
 
-          Skills grid
+          {/* Skills grid */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
